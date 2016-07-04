@@ -1,5 +1,7 @@
 FROM pritunl/archlinux
 
+RUN pacman -S gcc musl --noconfirm
+
 ENV RUST_ARCHIVE=rust-1.9.0-x86_64-unknown-linux-gnu.tar.gz
 ENV RUST_DOWNLOAD_URL=https://static.rust-lang.org/dist/$RUST_ARCHIVE
 
