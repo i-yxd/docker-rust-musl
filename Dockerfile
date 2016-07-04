@@ -1,6 +1,6 @@
 FROM pritunl/archlinux
 
-RUN pacman -S ca-certificates gcc musl upx rsync --noconfirm
+RUN pacman -S ca-certificates gcc musl upx rsync openssh --noconfirm
 
 RUN curl -sSf https://static.rust-lang.org/rustup.sh | \
     sh -s -- --channel=stable \
