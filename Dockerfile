@@ -3,7 +3,7 @@ FROM pritunl/archlinux
 RUN pacman -S ca-certificates gcc musl upx --noconfirm
 
 RUN curl -sSf https://static.rust-lang.org/rustup.sh | \
-    sh -- --channel=stable \
+    sh -s -- --channel=stable \
     --with-target=x86_64-unknown-linux-musl \
     --disable-sudo
 
