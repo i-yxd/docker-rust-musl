@@ -1,6 +1,6 @@
 FROM pritunl/archlinux
 
-RUN pacman -S gcc musl --noconfirm
+RUN pacman -S gcc musl upx --noconfirm
 
 RUN curl -sSf https://static.rust-lang.org/rustup.sh | \
     sh -- --channel=stable \
